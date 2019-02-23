@@ -5,7 +5,7 @@ exports.handler = function(context, event, callback) {
 	response.say("You have reached Matt Vaughan's message service. Record your message, when you are done, you may wait or press star.");
 	response.record({
 	   method: "post",
-	   action: "https://crimson-crab-4929.twil.io/message-voice",
+	   action: "/message-voice",
 	   maxLength: 25,
 	   finishOnKey: "*"
 	});
